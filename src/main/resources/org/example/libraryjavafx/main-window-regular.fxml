@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="471.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.libraryjavafx.controller.RegularController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="66.0" layoutY="48.0" prefHeight="376.0" prefWidth="713.0">
+         <content>
+            <VBox fx:id="verticalBox" prefHeight="370.0" prefWidth="707.0" />
+         </content></ScrollPane>
+      <Label layoutX="373.0" layoutY="14.0" text="Books Available" />
+      <Button fx:id="buttonDeleteAccount" layoutX="810.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleDeleteAccount" text="DeleteAccount" />
+   </children>
+</AnchorPane>

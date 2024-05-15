@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.libraryjavafx.controller.SignUpController">
+   <children>
+      <Label layoutX="127.0" layoutY="23.0" text="Welcome to Library App" />
+      <TextField fx:id="textFieldUsername" layoutX="24.0" layoutY="68.0" />
+      <PasswordField fx:id="textFieldPassword" layoutX="200.0" layoutY="68.0" />
+      <TextField fx:id="textFieldFirstName" layoutX="27.0" layoutY="117.0" />
+      <TextField fx:id="textFieldLastName" layoutX="200.0" layoutY="117.0" />
+      <TextField fx:id="textFieldAddress" layoutX="27.0" layoutY="167.0" />
+      <TextField fx:id="textFieldPhone" layoutX="200.0" layoutY="167.0" />
+      <TextField fx:id="textFieldCNP" layoutX="27.0" layoutY="216.0" />
+      <TextField fx:id="textFieldEmail" layoutX="199.0" layoutY="216.0" />
+      <Label layoutX="73.0" layoutY="50.0" text="Username" />
+      <Label layoutX="250.0" layoutY="50.0" text="Password" />
+      <Label layoutX="73.0" layoutY="100.0" text="First Name" />
+      <Label layoutX="247.0" layoutY="100.0" text="Last Name" />
+      <Label layoutX="81.0" layoutY="150.0" text="Address" />
+      <Label layoutX="258.0" layoutY="150.0" text="Phone" />
+      <Label layoutX="90.0" layoutY="199.0" text="CNP" />
+      <Label layoutX="260.0" layoutY="199.0" text="Email" />
+      <Label layoutX="87.0" layoutY="241.0" text="Role" />
+      <Button fx:id="buttonSignUp" layoutX="164.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleSignUp" text="SignUp" />
+      <ChoiceBox fx:id="choiceBoxRole" layoutX="27.0" layoutY="258.0" prefWidth="150.0" />
+      <Label layoutX="222.0" layoutY="241.0" text="Employee Password" />
+      <TextField fx:id="textFieldEmployeePassword" layoutX="201.0" layoutY="258.0" />
+   </children>
+</AnchorPane>
