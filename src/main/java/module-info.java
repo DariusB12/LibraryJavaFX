@@ -13,4 +13,7 @@ module org.example.libraryjavafx {
     opens org.example.libraryjavafx.service.dto;
     exports org.example.libraryjavafx.service.dto.regularDTO;
     opens org.example.libraryjavafx.service.dto.regularDTO;
+    exports org.example.libraryjavafx.controller.regular;
+    exports org.example.libraryjavafx.controller.employee;
+    opens org.example.libraryjavafx.service.dto.emplloyeeDTO;
 }

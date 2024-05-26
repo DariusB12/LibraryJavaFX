@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="261.0" prefWidth="664.0" style="-fx-background-color: DADADA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.libraryjavafx.controller.regular.ReturnBookController">
+    <children>
+        <Pane fx:id="paneBorrowBook" layoutX="14.0" layoutY="14.0" prefHeight="139.0" prefWidth="637.0">
+            <children>
+                <VBox fx:id="verticalBox" layoutX="1.0" prefHeight="139.0" prefWidth="637.0" />
+            </children></Pane>
+        <Button fx:id="buttonSendReturn" layoutX="426.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleSendReturn" text="SendReturnAppointment" />
+        <TextArea fx:id="textAreaDescription" layoutX="58.0" layoutY="179.0" prefHeight="70.0" prefWidth="249.0" />
+        <Label layoutX="71.0" layoutY="162.0" text="Details about the appointment">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Label>
+      <Label layoutX="446.0" layoutY="162.0" text="Return Terminal">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font></Label>
+      <Label fx:id="labelReturnTerminal" layoutX="470.0" layoutY="179.0" text="RETURN Terminal Name">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

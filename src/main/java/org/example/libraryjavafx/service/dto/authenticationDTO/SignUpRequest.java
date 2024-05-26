@@ -24,6 +24,6 @@ public class SignUpRequest {
     private String cnp;
     private String email;
     private UserRole role;
-    @SerializedName("role password")
+    @SerializedName("role_password")
     private String rolePassword;
 }

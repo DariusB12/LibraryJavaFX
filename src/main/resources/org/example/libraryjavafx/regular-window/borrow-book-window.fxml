@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="263.0" prefWidth="641.0" style="-fx-background-color: DADADA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.libraryjavafx.controller.regular.BorrowBookController">
+   <children>
+      <Pane fx:id="paneBorrowBook" layoutX="14.0" layoutY="14.0" prefHeight="139.0" prefWidth="615.0">
+         <children>
+            <VBox fx:id="verticalBox" layoutX="1.0" prefHeight="139.0" prefWidth="614.0" />
+         </children></Pane>
+      <ChoiceBox fx:id="choiceBoxBorrowTerminals" layoutX="426.0" layoutY="179.0" prefWidth="150.0" style="-fx-background-color: FFFFFF;" />
+      <Button fx:id="buttonSendBorrow" layoutX="423.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleSendBorrow" text="SendBorrowAppointment">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <TextArea fx:id="textAreaDescription" layoutX="74.0" layoutY="179.0" prefHeight="74.0" prefWidth="249.0" />
+      <Label layoutX="87.0" layoutY="161.0" text="Details about the appointment">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

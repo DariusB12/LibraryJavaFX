@@ -6,6 +6,8 @@ plugins {
     id 'org.beryx.jlink' version '2.25.0'
 }
 
+
+
 group 'org.example'
 version '1.0-SNAPSHOT'
 
@@ -26,7 +28,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'org.example.libraryjavafx'
-    mainClass = 'org.example.libraryjavafx.HelloApplication'
+    mainClass = 'org.example.libraryjavafx.LibraryMain'
 }
 
 javafx {

@@ -12,6 +12,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.example.libraryjavafx.controller.employee.EmployeeController;
+import org.example.libraryjavafx.controller.regular.RegularController;
 import org.example.libraryjavafx.exception.Message;
 import org.example.libraryjavafx.exception.ServiceException;
 import org.example.libraryjavafx.exception.ValidationException;
@@ -40,7 +42,7 @@ public class SignUpController implements Initializable {
     private Container container;
     private Stage stageSelf;
     private AuthenticationService authenticationService;
-    public static void openSignInWindow(Container containerSource) throws IOException {
+    public static void openSignUnWindow(Container containerSource) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Library App - Sign Up");
         FXMLLoader loader=new FXMLLoader(RegularController.class.getResource("/org/example/libraryjavafx/signUp-window.fxml"));

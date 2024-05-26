@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="758.0" prefWidth="1108.0" style="-fx-background-color: DADADA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.libraryjavafx.controller.regular.RegularController">
+    <children>
+        <Label layoutX="66.0" layoutY="36.0" text="Books Available - select a book to create a borrow appointment">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font></Label>
+        <Button fx:id="buttonDeleteAccount" layoutX="991.0" layoutY="718.0" mnemonicParsing="false" onAction="#handleDeleteAccount" text="DeleteAccount" />
+      <ListView fx:id="listViewUnconfirmedAppointments" layoutX="737.0" layoutY="58.0" prefHeight="380.0" prefWidth="348.0" style="-fx-background-color: F7F7F7;" />
+      <Label layoutX="792.0" layoutY="36.0" text="Unconfirmed Appointments">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font></Label>
+      <Button fx:id="buttonCancelAppointment" layoutX="843.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCancelAppointment" text="Cancel Appointment">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <ListView fx:id="listViewConfirmedAppointments" layoutX="737.0" layoutY="466.0" prefHeight="248.0" prefWidth="348.0" style="-fx-background-color: F7F7F7;" />
+      <Label layoutX="802.0" layoutY="444.0" text="Confirmed Appointments">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font></Label>
+      <ListView fx:id="listViewBorrowedBooks" layoutX="26.0" layoutY="466.0" prefHeight="248.0" prefWidth="693.0" style="-fx-background-color: F7F7F7;" />
+      <Label layoutX="81.0" layoutY="444.0" text="BorrowedBook - select a book to create a return appointment">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font></Label>
+      <ListView fx:id="listViewBooks" layoutX="26.0" layoutY="58.0" prefHeight="380.0" prefWidth="693.0" style="-fx-background-color: F7F7F7;" />
+    </children>
+</AnchorPane>

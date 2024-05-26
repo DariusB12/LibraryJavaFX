@@ -16,8 +16,6 @@ public class User{
     private String token;
     @SerializedName("username")
     private String username;
-    @SerializedName("user role")
+    @SerializedName("user_role")
     private UserRole userRole;
-    @SerializedName("account state")
-    private AccountState accountState;
 }

@@ -1,4 +1,4 @@
-package org.example.libraryjavafx.service.dto.regularDTO;
+package org.example.libraryjavafx.model;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
@@ -12,13 +12,17 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BookDTO {
+public class Book {
+    private Integer id;
     private String title;
     private String author;
     private String publisher;
+    @SerializedName("publish_date")
     private LocalDate publishDate;
     private Integer pages;
     private String description;
+    @SerializedName("image_path")
     private String imagePath;
+    @SerializedName("books_available")
     private Integer booksAvailable;
 }

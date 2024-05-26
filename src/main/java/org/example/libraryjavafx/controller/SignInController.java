@@ -9,6 +9,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.example.libraryjavafx.controller.employee.EmployeeController;
+import org.example.libraryjavafx.controller.regular.RegularController;
 import org.example.libraryjavafx.exception.Message;
 import org.example.libraryjavafx.exception.ServiceException;
 import org.example.libraryjavafx.exception.ValidationException;
@@ -78,7 +80,7 @@ public class SignInController implements Initializable {
     }
 
     public void handleSignUp(ActionEvent actionEvent) throws IOException {
-        SignUpController.openSignInWindow(this.container);
+        SignUpController.openSignUnWindow(this.container);
         this.stageSelf.close();
     }
 }
