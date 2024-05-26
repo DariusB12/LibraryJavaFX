@@ -1,4 +1,4 @@
-# LibrarySpringBoot
+# LibraryJavaFX
 # Requirement:
   A library offers its subscribers a list of books that can be borrowed.\
   Each book can exist in one or more copies, identified by unique codes (id). \
